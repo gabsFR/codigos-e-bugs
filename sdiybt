@@ -1,0 +1,29 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro num[12] = {1,3,5,7,9,11,13,15,17,19,21,23}
+
+		inteiro ini= 0
+		inteiro fim = 11
+		inteiro meio
+		inteiro procurado = 15
+
+		 enquanto (ini <= fim){ 
+		 meio = (ini + fim) / 2
+
+		 se(procurado == num[meio]){
+		 	escreva("numero encontrado na posicao: ", meio)
+		 	pare
+		 }senao{
+		 	se(procurado > num[meio]){
+		 		ini = meio + 1
+		 	}senao{
+		 		fim = meio - 1
+		 	}
+		 }
+		 }
+		 
+	}
+}
