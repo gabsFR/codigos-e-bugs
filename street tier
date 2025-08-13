@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	    escreva("**TOP 5 MAIORES BUXAS DOS ANIMES**\n")
+		cadeia buxas[5] = {"1º lugar: GOKU", "2º lugar: SAITAMA", "3º lugar: MADOKA","RIMURU","WALLY WEST"}
+
+            buxas[5] = "DEKU"
+           
+		 para(inteiro i=0; i < 5; i++){
+             escreva(i + 1, "lugar: º", buxas[i], "\n")
+	}
+           para(inteiro i=0; i < 6; i++){
+            se(buxas[i] == "IZUKU"){
+            	escreva("VEM CÁ STREET TIER")
+            }pare
+            
+		}
+		}
+}
