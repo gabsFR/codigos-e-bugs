@@ -1,0 +1,30 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro num[10]
+		inteiro valor
+
+		 para(inteiro i=0; i < 10; i++){
+		  escreva("informe um numero: \n")
+		  leia(valor)
+
+		  num[i] = valor
+	}
+	      para(inteiro i=0; i < 10; i++){
+	      	se(num[i] % 2 == 0){
+	      		escreva("\nnumero par: ", num[i])
+	      		escreva("\nposicao: ", i)
+	      	}senao{
+	      	  escreva("\nnumero impar: ", num[i])
+	      	  escreva("\nposicao: ", i)
+	      	}
+
+		}
+
+		 }
+
+		
+		
+}
