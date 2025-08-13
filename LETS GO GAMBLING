@@ -1,0 +1,33 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro num[30]
+		inteiro valor, gambling
+
+		escreva("LETS GO GAMBLING: \n")
+		para(inteiro i=0; i < 30; i++){
+		  	
+		  	valor = sorteia(1, 15)
+
+		  	num[i] = valor
+		}
+		
+	     escreva("agr digite um numero: ")
+	     leia(gambling)
+	      
+	     para(inteiro i=0; i < 30; i++){
+	      	
+	      	se(gambling == num[i]){
+	      		escreva("acertou!, a posiçao do numero e:", i, "\n")
+	      	}
+	      }
+
+	}
+
+		 
+
+		
+		
+}
