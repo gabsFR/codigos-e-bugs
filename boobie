@@ -1,0 +1,69 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia conv[100]
+
+		logico continuar = verdadeiro
+		inteiro opcao
+		inteiro numeroConvidados = 0
+
+		enquanto(continuar)
+		{
+			escreva("******************\n")
+			escreva("1) cadastrar\n")
+			escreva("2) listar\n")
+			escreva("3) remover\n")
+			escreva("4) sair\n")
+			escreva("******************\n")
+
+			leia(opcao)
+
+			escolha(opcao)
+			{
+				caso 1:
+				cadeia nome
+				escreva("informe o nome do convidado: ")
+				leia (nome)
+
+				conv[numeroConvidados] = nome
+				numeroConvidados++
+
+				pare
+
+				caso 2:
+				para(inteiro i=0; i < numeroConvidados; i++)
+				{
+					se(conv[i] != "")
+					{
+						escreva(conv[i], "\n")
+					}senao{
+						pare
+					}
+					
+				}
+				
+				pare	
+				
+				caso 3:
+				 inteiro posicao
+				 escreva("informe a posicao do convidado que deseja excluir: ")
+				 leia(posicao)
+				 conv[posicao] = conv[numeroConvidados-1]
+				 numeroConvidados --
+				pare
+
+				caso 4:
+				escreva("saindo.....")
+				continuar = falso
+
+				pare
+
+				caso contrario: escreva("opçao invalida")
+				}
+				
+		}
+	}
+	
+}
